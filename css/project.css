@@ -3,6 +3,7 @@
     padding: 20px;
     color: white;
     margin-top: 150px;
+    
 
     scale: .7;
     opacity: 0;
@@ -163,7 +164,7 @@
         width: 200px;
         border: 1px solid #F25C61;
         width: fit-content;
-        height: 370px;
+        height: 390px;
         opacity: 0.7;
     }
 
@@ -197,6 +198,7 @@
         overflow-x: scroll;
         height: 400px;
         width: 95vw;
+        overflow-y: hidden;
 
         scale: .7;
         opacity: 0;
