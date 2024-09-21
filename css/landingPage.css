@@ -77,6 +77,10 @@ button:hover {
     flex-shrink: 0;
 }
 
+.icons img:hover{
+    cursor: pointer;
+}
+
 .myImg img{
     order: -1;
     border-radius: 10px;
