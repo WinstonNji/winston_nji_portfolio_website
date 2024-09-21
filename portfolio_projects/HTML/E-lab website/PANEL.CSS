@@ -1,0 +1,218 @@
+*{
+    box-sizing: border-box;
+}
+
+
+.container{
+    display: flex;
+    width: 100vw;
+    margin-right: -20px;
+    padding-left: 10px;
+    padding-right: 15px;
+}
+
+
+background-image{
+    border-radius: 50%;
+}
+
+.panel{
+   background-size: auto 100%; 
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 70vh;
+    border-radius: 50px;
+    color: white;
+    flex: 0.5;
+    margin: 10px;
+    position: relative;
+    transition: flex 0.7s ease-in;
+}
+
+.container a{
+    text-decoration: none;
+    color: white;
+}
+
+.panel:hover p a{
+    color: purple;
+    text-decoration: underline;
+}
+
+.panel h3{
+    font-size: 20px;
+    position: absolute;
+    top: 345px;
+    left: 20px;
+    margin: 0;
+    opacity: 0;
+    z-index: 1;
+}
+
+#DEB{
+
+    margin-top: -40px;
+}
+
+#KELLY{
+    margin-top: -20px;
+}
+
+#WINS{
+    margin-bottom: .20px;
+}
+
+.panel p 
+{
+    color: white;
+    opacity: 0;
+    position: absolute;
+    bottom: 10px;
+    width: 30%;
+    margin-left: 18px;
+    transition: flex 0.7s ease-in; 
+}
+
+.panel .p1{
+    width: 27%;
+    position: absolute;
+    bottom: 3px;
+    height: 100%;
+    margin-bottom: -12px;
+    padding-top: 40%;
+    color: white;
+}
+
+
+
+.panel .p2{
+    margin-left: 18px;
+    width: 24%;
+    margin-bottom: -5px;
+    opacity: 0; 
+}
+
+.panel .p3, .panel .p4{
+    color: white;
+    width: 25%;
+    margin-bottom: -5px;
+    opacity: 0;
+}
+
+.panel .p4{
+    width: 30%;
+}
+
+.panel.active{
+    flex:5;
+}
+
+.panel.active h3, 
+.panel.active p,
+.panel.active .p2,
+.panel.active .p3{
+    opacity: 1;
+    transition: opacity 0.6s ease-in 0.7s;
+}
+
+@media(max-width: 480px) {
+    .container{
+        width: 100vw;
+    }
+
+    .panel:nth-of-type(4), 
+    .panel:nth-of-type(5) {
+        display: none;
+    }
+}
+
+#CH1, .info2 h3{
+    color: black;
+    font-size: 30px;
+}
+
+
+.info p, .info2 p, .info5 p{
+    position: absolute;
+    bottom: 20px;
+    left: 60px;
+    width: 50%;
+}
+
+.info2 p{
+    color: white;
+}
+
+.info h3{
+    position: absolute;
+    left: 75px;
+    bottom: 15px;
+    padding-top: 23px;
+}
+
+.info2 h3{
+    color: white;
+}
+
+.info2 p, .info3 p{
+    color: white;
+}
+
+.info3 h3, .info3 p{
+    color: black;
+    font-weight: 600;
+}
+
+.info2 h3, .info3 h3, .info4 h3, .info5 h3{
+    padding-top:10px;
+    position: absolute;
+    left: 75px;
+    bottom: 5px;
+    padding-top: 0px;
+}
+
+.info3 p, .info4 p{
+    position: absolute;
+    bottom: 10px;
+    left: 60px;
+    width: 60%;
+    height: 100px;
+    padding-top: 10px;
+    margin-top: 10px;
+}
+
+.info3 h3, .info4 h3, .info5 h3{
+    font-size: 30px;
+}
+
+.info p, .info2 p, .info3 p, .info4 p, .info5 p{
+    text-align: white;
+    padding: 10px;
+    border: white;
+    border-radius: 10px;
+    backdrop-filter: blur(8px);
+    color: white;
+
+}
+
+.info3 p{
+    height: 27%;
+    width: 62%;
+    backdrop-filter: blur(10px);
+    padding: 10px;
+}
+
+.info p{
+    background-color: black;
+    backdrop-filter: blur(5px);
+}
+
+.info5 p{
+    padding-bottom: 10px;
+margin-top: 10px;
+}
+
+
+
+
+

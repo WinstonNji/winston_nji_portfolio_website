@@ -1,0 +1,144 @@
+.landingContainer{
+    width: 100vw;
+    height: 100vh;
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 16px;
+}
+
+.landingContainer .greeting{
+    order: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+.landingContainer .greeting h1{
+    font-size: 1.5rem;
+    color: white;
+}
+.landingContainer img{
+    width: 230px;
+    order: 1;
+}
+
+.landingContainer .myName{
+    font-size: 1.5rem;
+    color: #F25C61;
+    padding-left: 5px;
+}
+.jobTitle{
+    display: block;
+    font-size: 0.7rem;
+    margin-bottom: 10px;
+}
+.buttons{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-top: 5px;
+    position: relative;
+    height: 50px;
+    color: white;
+    font-size: 1rem;
+}
+button{
+    width: 70px;
+    margin-left: 10px;
+    margin-bottom: 5px;
+    background-color: #F25C61;
+    border: none;
+    font-size: 0.5rem;
+    padding: 5px;
+    border-radius: 10px;
+    height: fit-content;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #d14a4c;
+}
+
+.icons{
+    display: flex;
+    bottom: 3px;
+    left: 38%;
+    justify-content: space-evenly;
+    position: absolute;
+    width: 50px;
+}
+
+.icons img{
+    width: 20px;
+    flex-shrink: 0;
+}
+
+.myImg img{
+    order: -1;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+@media (min-width:768px){
+    .landingContainer{
+        display: flex;
+        flex-direction: row;    
+        justify-content: space-around;   
+    }
+    .landingContainer .greeting{
+        align-items: start;
+        padding: 0;
+        width: fit-content;
+        padding-bottom: 40px;
+    }
+
+    .landingContainer .greeting h1  {
+        font-size: 2.5rem;
+    }
+
+    .landingContainer .greeting .myName{
+        font-size: 2.5rem;
+    }
+
+    .landingContainer .greeting .jobTitle{
+        font-size: 0.7rem;
+    }
+
+    .landingContainer .greeting .buttons{
+        box-sizing: border-box;
+        padding-bottom: 90px;
+    }
+
+    .landingContainer .greeting button{
+        padding: 5px;
+        font-size: 0.7rem;
+        width: 170px;
+    }
+
+    .landingContainer .icons{
+        position: absolute;
+        bottom: 30px;
+        left: 43%;
+    }
+
+    .landingContainer .icons img{
+        width: 30px;
+    }
+
+    .landingContainer .myImg{
+        width: 300px;
+        order: 1;
+        height: 213px;
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+    }
+
+    .landingContainer .myImg img{
+        align-items: center;
+    }
+}

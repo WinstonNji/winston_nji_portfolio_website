@@ -1,0 +1,133 @@
+.contact-section {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background-color: #000;
+    color: #fff;
+    min-height: 60vh;
+    width: 100vw;
+
+    opacity: 0;
+    animation: fade-in linear forwards;
+    animation-timeline: view();
+    animation-range: 200px 500px;
+
+}
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-bottom: 20px;
+}
+
+.contact-info h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.contact-info p {
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+.social-icons {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.social-icons i {
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.download-cv {
+    background-color: #F25C61;
+    color: #fff;
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 0.8rem;
+    width: fit-content;
+    margin-top: -20px;
+    margin-left: -1px;
+}
+
+.download-cv:hover {
+    background-color: #d14a4c;
+}
+
+/* Contact Form */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    border: 1px solid #555;
+    border-radius: 5px;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+    color: #999;
+}
+
+.contact-form button {
+    padding: 5px;
+    background-color: #F25C61;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 0.70rem;
+    margin-left: -1px;
+}
+
+.contact-form button:hover {
+    background-color: #d14a4c;
+}
+
+@media (min-width:768px){
+
+    .contact-section{
+        padding: 30px;
+    }
+
+    .contact-form button {
+        padding: 10px;
+        background-color: #F25C61;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+        border-radius: 5px;
+        font-size: 1rem;
+        margin-left: -1px;
+    }
+
+    .download-cv {
+        background-color: #F25C61;
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        cursor: pointer;
+        border-radius: 5px;
+        font-size: 1rem;
+        width: fit-content;
+        margin-top: -20px;
+        margin-left: -1px;
+    }
+}
+

@@ -1,0 +1,95 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Raleway', sans-serif;
+    box-sizing: border-box;
+}
+
+@keyframes fade-in{
+    to {scale: 1; opacity: 1;}
+}
+
+ul a{
+    color: white;
+}
+
+html,body{
+    overflow-x: hidden;
+    width: 100vw;
+    scroll-behavior:smooth;
+}
+
+
+nav {
+    background-color: #000000;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    z-index: 4;
+    overflow: auto;
+    position: fixed;
+    right: 0;
+    left: 0;
+    color: white;
+    width: 100vw;
+}
+
+.navLogo a{
+    color: #F25C61;
+}
+
+nav .navLogo {
+    flex-grow: 2;
+    padding-left: 5px;
+}
+
+ul{
+    list-style: none;
+    display: flex;
+    flex-grow: 1;
+    font-size: 0.7rem;
+    justify-content: space-evenly;
+    cursor: pointer;
+}
+
+li{
+    padding: 3px;
+}
+
+li:hover{   
+    cursor: pointer;
+    text-decoration: underline 2px #F25C61;
+}
+
+
+h1:hover{
+    cursor: pointer;
+}
+
+#aboutMe{
+    scroll-margin-top: 80px; /* Adjust to the height you need */
+}
+
+#projects{
+    scroll-margin-top: 235px;
+}
+
+#myCertification{
+    scroll-margin-top: 80px;
+}
+
+#home{
+    scroll-padding-top: 0px;
+    scroll-margin-top: 0px;
+}
+
+
+@media (min-width: 768px) {
+    nav{
+        font-size: 1.5rem;
+    }
+
+    nav ul li{
+        font-size: 1rem;
+    }
+}

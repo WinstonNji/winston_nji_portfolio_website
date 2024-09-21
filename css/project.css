@@ -1,0 +1,283 @@
+.Project{
+    height: fit-content;
+    padding: 20px;
+    color: white;
+    margin-top: 150px;
+
+    scale: .7;
+    opacity: 0;
+    animation: fade-in linear forwards;
+    animation-timeline: view();
+    animation-range: 250px 500px;
+}
+
+
+.Project h2{
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.Project .display{
+    display: flex;
+    gap: 30px;
+    overflow-x: scroll;
+    width: 100vw;
+}
+
+.Project #MobileProjects .display, .Project #Javascript .display {
+    scale: .7;
+    opacity: 0;
+    animation: fade-in linear forwards;
+    animation-timeline: view();
+    animation-range: 250px 500px;
+}
+
+.Project #MobileProjects, .Project #Javascript{
+    scale: .7;
+    opacity: 0;
+    animation: fade-in linear forwards;
+    animation-timeline: view();
+    animation-range: 250px 500px;
+}
+
+.projectContainer{
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    border: 1px solid #F25C61;
+    width: fit-content;
+    height: 300px;
+    transition: box-shadow 0.8s;
+    transition: transform 0.8s;
+}
+
+.projectContainer:hover {
+    transform: translateY(-3px);
+    box-shadow: 0px 0px 10px white; /* Increase shadow for the "float" effect */
+  }
+
+.projectContainer img{
+    width: 350px;
+}
+
+.info{
+    color: white;
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    position: relative;
+}
+
+.info h5{
+    color: #F25C61;
+    padding-bottom: 7px;
+}
+
+.info p{
+    font-size: 0.6rem;
+    max-width: 100%
+}
+
+.info .buttons{
+    padding-top: 10px;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: absolute;
+    top: 65px;
+    left: 95px;
+}
+
+.info .buttons button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+}
+
+.info .buttons button svg{
+    fill: white;
+    margin-right: 5px;
+}
+
+.Project .display {
+    display: flex;
+    gap: 20px;
+    overflow-x: scroll;
+    width: 90vw;
+    padding-bottom: 15px;
+}
+
+/* Customizing the scrollbar */
+.Project .display::-webkit-scrollbar {
+    height: 8px; /* Height of horizontal scrollbar */
+}
+
+.Project .display::-webkit-scrollbar-track {
+    background: black; /* Light background color for track */
+}
+
+.Project .display::-webkit-scrollbar-thumb {
+    background-color: #F25C61; /* Scrollbar color */
+    border-radius: 10px; /* Rounded corners */
+    border: 2px solid black; /* Optional: padding around the thumb */
+}
+
+.Project .display::-webkit-scrollbar-thumb:hover {
+    background-color: #d14a4c; /* Darker shade when hovered */
+}
+
+
+@media (min-width:469px) and (max-width:768px){
+    .Project #MobileProjects .display{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        width: 95vw;
+        overflow-x: scroll;
+    }
+
+    .Project #Javascript .display{
+        width: 95vw;
+    }
+}
+
+@media (min-width:714px) and (max-width:768px){
+    .Project #HTMLCSS .display{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        overflow-x: scroll;
+        width: 95vw;
+    }  
+}
+
+@media (min-width:768px) {
+
+    .projectContainer{
+        display: flex;
+        flex-direction: column;
+        width: 200px;
+        border: 1px solid #F25C61;
+        width: fit-content;
+        height: 370px;
+        opacity: 0.7;
+    }
+
+    .projectContainer:hover{
+        opacity: 1;
+    }
+
+    .Project .display{
+        display: flex;
+        justify-content: flex-start;
+        overflow-x: scroll;
+        width: 95vw;
+    }
+
+
+    .Project #MobileProjects .display{
+        display: flex;
+        justify-content: flex-start;
+        overflow-x: scroll;
+
+        scale: .7;
+        opacity: 0;
+        animation: fade-in linear forwards;
+        animation-timeline: view();
+        animation-range: 250px 500px;
+    }
+
+    .Project #Javascript .display{
+        display: flex;
+        flex-direction: row;
+        overflow-x: scroll;
+        height: 400px;
+        width: 95vw;
+
+        scale: .7;
+        opacity: 0;
+        animation: fade-in linear forwards;
+        animation-timeline: view();
+        animation-range: 250px 500px;
+    }
+
+    .Project #Javascript img{
+        width: 400px;
+    }
+
+    .projectContainer img{
+        width: 400px;
+    }
+
+    .info{
+        position: relative;
+        padding: 15px;
+    }
+
+    .info h5{
+        font-size: 1.3rem;
+    }
+
+    .info p{
+        max-width: 100%;
+        font-size: 0.8rem;
+    }
+
+    .info .buttons{
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-self: flex-end;
+        position: absolute;
+        bottom: 0;
+    }
+    
+    .info .buttons button{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        justify-content: space-between;
+        color: white;
+        font-size: 0.9rem;
+        width: 85px;
+    }
+
+    .info .buttons button svg{
+        fill: white;
+        height: 15px;
+        margin-left: 10px;
+    }
+}
+
+@media (min-width:865px){
+    .Project #MobileProjects .display{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        overflow-x: hidden;
+    }  
+
+    .info p{
+        max-width: 372px;
+    }
+
+    .Project #Javascript .display, .Project #HTMLCSS .display{
+        width: 96vw;
+    }
+}
+
+/* animation */
+@media (min-width: 425px){
+    .Project{
+        scale: .7;
+        opacity: 0;
+        animation: fade-in linear forwards;
+        animation-timeline: view();
+        animation-range: 250px 500px;
+    }
+}
+

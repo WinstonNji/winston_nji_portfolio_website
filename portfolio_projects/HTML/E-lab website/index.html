@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="website.css">
+    <link rel="stylesheet" href="PANEL.CSS">
+<style>
+    html, body {
+  margin: 0;
+  padding: 0;
+}
+
+/* Background animation */
+@import url("https://fonts.googleapis.com/css?family=Lobster&display=swap");
+  
+.title {
+  font-size: 2.5rem;
+  font-family: "Lobster", cursive;
+}
+
+.wrapper {
+  animation: scroll 100s linear infinite;
+  background: url("https://images.unsplash.com/photo-1465146633011-14f8e0781093?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3450&q=80"), #111111;
+  color: #eee;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1; /* Ensure it's behind other content */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  perspective: 1000px;
+  perspective-origin: 50% 50%;
+}
+
+@keyframes scroll {
+  100% {
+    background-position: 0px -400%;
+  }
+}
+
+/* Fallback if the operating system prefers reduced motion */
+@media (prefers-reduced-motion) {
+  .wrapper {
+    animation: scroll 800s linear infinite;
+  }
+}
+
+@media (min-width: 670px) {
+  .title {
+    font-size: 5rem;
+  }
+}
+
+  </style>
+    
+</head>
+<body>
+    <nav>
+        <div class="navigation">
+            <div class="leftsection">
+                <div class="Elab">E-Lab</div>
+            </div>
+                <div class="middlesection">
+                  <a href="#aboutus" class="nav-link"><div class="aboutus2" id="2">About Us</div></a>
+                  <a href="#members" class="nav-link"><div class="members">Members</div></a>
+                  <a href="#challenges" class="nav-link"><div class="challenges">Challenges</div></a>
+                  <a href="#solution" class="nav-link"><div class="think_tank">Our Solution</div></a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <article class="wrapper">
+        <h2 class="title"></h2>
+      </article>
+
+    <header>
+        <div class="containerintro">
+            <div class="intro-page">
+                <p class="web-heading">Welcome to VISION-X <BR>E-LAB Journey</p>
+                <p class="subtitle">Explore our E-Lab journey and innovatice solutions to real-world-challenges</p>
+            </div>
+        </div>
+       
+        
+    </header> 
+    <div class="aboutus" id="aboutus"> <h2>ABOUT US</h2></div>  
+        <div class="aboutus-card">
+            <div class="mission-card">
+                 <h4>Problem</h4>
+                 <p>Ivory Coast is the 13th largest mango supplier in Africa, with farmers
+                    producing 180,000 tons of mangoes per year but due to the lack of
+                    post-harvest infrastructure, they waste up to 40% of their harvest.
+                    We aim to provide solar-powered cooling post-harvest storage
+                    facilities that will be rented to farmers according to the capacity
+                    required, in order to reduce the waste by 7%</p>
+            </div>
+            <div class="problem-card">
+                 <h4>Vision X's Mission</h4>
+                 <p>Our mission is to provide sustainable solar-powered          cooling storage solutions for farmers in remote
+                    areas by 2034, in order to subdue post-harvest
+                    food wastage.</p>
+            </div>
+        </div>
+            <div class="solution">
+                <div class="our-solution">
+                    <h4>Our solution</h4>
+                    <p>Our solution involves creating a solar-powered storage              facility, ensuring efficient mango preservation and minimizing post-harvest losses.</p>
+                    </div>
+            </div>
+            
+       
+    <div id="members" class="member-section"><h2>THINK THANK MEMBERS</h2></div>
+    <div class="container">
+        <div class="panel active" id="C2" 
+         style="background-image: url(img/WhatsApp\ Image\ 2024-03-20\ à\ 10.50.57_023c5e19.jpg
+        );" >
+            <div class="member1">
+                <h3 id="DEB">Deborah</h3>
+                <p class="p1" >Deborah Meillah is a dedicated student championing women's empowerment and rights through activism and advocacy for gender equality. She ism passionate about creating a more inclusive and equitable society for all women.</p>
+            </div>
+        </div> 
+         <div class="panel" style="background-image: url(img/Joy.jpg
+            );"><h3>Joy</h3>
+            <p>
+              Joy Gitonga a current major in BEL, focuses her  mission on creating a performing arts industry in my home country.</p>
+            
+            </div> 
+         <div class="panel" style="background-image: url(
+                img/Kelly.jpg
+            );">
+            <h3 id="KELLY">Kelly</h3>
+            <p class="p2">Kelly Ishimwe, passionate about the power of knowledge and learning, believes in its ability to empower individuals to grow, innovate, and positively impact the world.</p>
+            </div> 
+         <div class="panel" style="background-image: url(img/KOLBE.jpg );">
+            <h3>Kolbe</h3>
+            <p class="p3">Maximilien Kolbe is a creative industry enthusiastic entrepreneurs dedicate to professionalize the Cultural and Creative Industries</p>
+        </div> 
+         <div class="panel" style="background-image: url(img/Winnie.jpg
+            );"><h3 id="WINS">Winston</h3>
+            <p class="p4">
+                Winston Nji. A Cameroonian software engineering student, driven by a passion for technology and innovation, blends academic excellence with cultural richness.
+            </p></div>
+         </div>
+    </div>
+
+    <div id="challenges" class="challenge-section"><h2>E-LAB CHALLENGES</h2></div>
+    <div class="container">
+        <a href="https://www.youtube.com/watch?v=Tn_iDpeb34o">
+        <div class="panel active" style="background-image: url(img/CHALLENGE\ 1.png  );">
+        </a>
+        
+       <div class="info">
+            <p class="p10">
+                In this Challenge, we introduced our selves what we like , what our some of our fun facts, and our individual contributions to our think tank. <br> Click here for video:
+                <a href="https://www.youtube.com/watch?v=Tn_iDpeb34o">CLICK ME!</a>
+        </p></div> 
+       </div>
+    
+         <div class="panel" style="background-image: url(img/CHALLENGE\ 1\ \(1\).png
+            );">
+            <div class="info2">
+                <p class="p9">In this challenge, Vision X came together to find solutions for our challenge which is mango waste in Ivory coast , this is when we first came up with the solution of cooling facilities for mango post-harvest waste.<br> Click here for video:
+                    <a href="https://youtu.be/FVqUjTFBKLY">CLICK ME!</a></p></div> 
+            </div>
+            
+         <div class="panel" style="background-image: url(img/CHALLENGE\ 1\ \(2\).png
+            );">
+            <div class="info3">
+            <p class="p8">For the third challenge, Vision X engaged in community service by visiting the Sherry Silver Foundation. During this visit, we had the privilege of interacting with the children there. We taught them ballet, played football with them, and sang together. It was a mutual learning experience where we not only shared our skills but also gained valuable insights from the children. <br> Click here for video:
+                <a href="https://youtu.be/JrLdRK3idpQ?feature=shared">CLICK ME!</a></p></div> 
+            </div>
+         <div class="panel" style="background-image: url(img/CHALLENGE\ 1\ \(3\).png
+            );">
+            <div class="info4">
+            <p class="p7">For the  Hunt for  treasure challenge, Vision X had the opportunity to interview the owner of a macadamia processing industry located in Kenya. During the interview, we gained valuable insights into their operations and learned extensively about his business and its processes. <br> Click here for video:
+                <a href="https://youtu.be/ARB6vfColWI?feature=shared">CLICK ME!</a></p>
+        
+        </div> 
+            </div>
+         <div class="panel" style="background-image: url(img/CHALLENGE\ 1\ \(4\).png
+            );">
+            <div class="info5">
+                <p class="p6">In this challenge, our think tank completed a thorough study of our project, conducted research, and developed a detailed budget plan for our proposed solution
+                    <br> Click here for video:
+                <a href="https://www.instagram.com/reel/C4ymlkSNd2O/?utm_source=ig_web_copy_link">CLICK ME!</a></p>
+                </div>
+            </div>
+         </div>
+    </div>
+
+    <div class="solution-section"><H2>WHAT WE PROPOSE</H2></div>
+    <div class="problemcontainer">
+        <div class="problem">
+            <H3>Our Solution</H3>
+            <p>Our solution is to provide sustainable solar-powered
+                cooling storage solutions for farmers in remote
+                areas in order to subdue post-harvest
+                food wastage.</p>
+    </div>
+
+        <div class="Solution-card">
+            <div class="breakdown">
+                <h3>Implementation Process</h3>
+                <p> 1. Solar-Powered Storage Facility: Our solution includes a solar-powered storage facility, ensuring efficient mango preservation and minimizing post-harvest losses.</p>
+                <p>2. Mango Collection Centers (MCC): MCCs will streamline mango collection from
+                    local farmers, improving logistics and reducing transportation delays.</p>
+                <p>3. Enhanced Market Access: Our solution aims to improve market access for Ivorian
+                    farmers by ensuring better mango quality for international markets.</p>
+                <p>4. Strengthening Value Chain: We
+                    'll strengthen the mango value chain by optimizing
+                    post-harvest handling, attracting better prices and increasing profitability for farmers.</p>
+                <p>5. Sustainable Approach: Utilizing solar power for cooling reflects our commitment
+                    to sustainability, reducing operational costs in the long run and promoting
+                    environmental conservation.</p>
+            </div>
+            
+            <div class="impact">
+                <h3>Impact of our solution</h3>
+                <p>1. Reduces post-harvest
+                    losses through efficient
+                    mango preservation.
+                    </p>
+                <p>2. Enhances market
+                    opportunities for Ivorian
+                    farmers.</p>
+                <p>3. Strengthens the mango
+                    value chain, attracting
+                    better prices and increasing
+                    profitability.</p>
+            </div>
+        </div>
+         <div id="solution"  class="prototype">
+            <h2>OUR PROTOTYPE</h2>
+        </div>
+
+        <div class="prototype_section2">
+            <video width="640" height="360" controls> 
+                <source src="Facilityvideo.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+
+        <div class="prototype_brackets">
+            <div class="outdoor">
+                <img class="exterior" src="img/outdoor.jpg">
+                <h3>Solar Cooling Facility</h3>
+                <p>This prototype showcases the outdoor design of our solar cooling facility, featuring a wooden exterior selected for its compatibility with the surroundings and cost efficiency. The roof integrates solar panels to supply energy to the cooling systems.</p>
+            </div>
+
+            <div class="indoor">
+                <img class="interior" src="img/storage.jpg">
+                <h3>Interior</h3>
+                <p>This is the interior of our cooling facility, featuring insulated aluminum walls and a metallic-coated floor to maintain a consistent cool temperature. Equally features a large interior to accomodate for mango storage</p>
+            </div>
+           
+            <div class="CP">
+                <img class="CC" src="img/charge_controller.jpg">
+                <h3>Control Panel</h3>
+                <p>
+                    This is the Central Processing Unit (CPU) of our prototype cooling facility. It's a phone-compatible connected appliance that enables farmers/users to monitor and adjust the facility's temperature remotely at any given time.</p>
+            </div>
+        </div>
+
+        <footer>
+            <div class="footer-container">
+              <div class="social-media">
+                <a href="https://www.instagram.com/vision_x_2024?igsh=c2kwZHZtaGVmMXpl&utm_source=qr" target="_blank" rel="noopener noreferrer">Instagram</a>
+                <a href="https://www.youtube.com/@Vision_X_2024Vision_X" target="_blank" rel="noopener noreferrer">YouTube</a>
+              </div>
+              <div class="copyright">
+                &copy; VISION X. All rights reserved.
+              </div>
+            </div>
+          </footer>
+       
+    <script src="script.js"></script>
+</body>
+</html>   

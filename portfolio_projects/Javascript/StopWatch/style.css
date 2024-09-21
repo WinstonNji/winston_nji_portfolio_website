@@ -1,0 +1,78 @@
+body{
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+}
+
+.container{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: beige;
+    border-radius: 20px;
+    width: 65%;
+    text-align: center;
+    
+}
+
+
+.Box{
+    background-color: lightblue;
+    padding: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    border-radius: 15px;
+}
+
+h1{
+    color: red;
+}
+
+.buttons{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 70%;
+}
+
+button{
+    padding: 10px;
+    color: black;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+
+#Start{
+    background-color: green;
+    color: white;
+}
+
+#Start:hover{
+    background-color: rgb(9, 183, 9);
+}
+
+#Stop:hover{
+    background-color: rgb(255, 105, 50);
+}
+
+#Reset:hover{
+    background-color: rgb(44, 44, 240)
+}
+
+#Stop{
+    background-color: coral;
+    color: white;
+}
+
+#Reset{
+    background-color: rgb(50, 50, 230);
+    color: white;
+}

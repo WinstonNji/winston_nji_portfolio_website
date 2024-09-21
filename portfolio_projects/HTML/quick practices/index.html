@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    body{
+        display: flex;
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+        background-image: url(img/photo-1536532184021-da5392b55da1.avif);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 25px;
+        width: 500px;
+        border-radius: 15px;
+        backdrop-filter: blur(15px);
+        border: 1px solid rgb(104, 159, 178);
+        color: white;
+    }
+
+    .container:hover{
+        box-shadow: inset 7px 8px 20px;
+        transition: 3s;
+    }
+
+    .minicontainer{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #Email, #password{
+        margin-bottom: 10px;
+    }
+
+    .button, .button2{
+        display: flex;
+        flex-direction: column;
+        margin-top: 5px;
+    }
+
+    .button{
+        width: 135px;
+    }
+
+    
+    .signup, .CTA{
+        margin-bottom: 5px;
+        padding: 10px;
+        border-radius: 20px;
+        border: 1px solid black;
+        background-color: rgb(151, 202, 218);
+        box-shadow: 2px 2px 5px black ;
+        background-color: transparent;
+        color: white;
+        
+    }
+
+    .signup:hover, .CTA:hover{
+        font-size: medium;
+        box-shadow: 10px 10px 10px black ;
+        transition-duration: 1s;
+        cursor: pointer;
+        background-color: transparent;
+    }
+
+    input{
+        padding: 5px;
+        font-size: small;
+        border-radius: 5px;
+        overflow: hidden;
+        box-shadow: 2px 2px 15px lightblue;
+
+    }
+
+    input:focus{
+        outline: none;
+    }
+
+    input[type=checkbox]{
+        accent-color: lightblue;
+    }
+
+    h1{
+        font-style: italic;
+       
+        border: none;
+    }
+
+    .KMS{
+        font-style: italic;
+    }
+
+    
+    
+</style>
+
+<body>
+    <div class="container">
+        <h1>Please Sign in</h1>
+        <div class="minicontainer">
+            <label for="Email">Email:</label>
+            <input type="text" id="Email">
+
+            <label for="password">Password:</label>
+            <input type="password" id="password">
+
+        </div>
+        
+        <div class="KMS">
+            <input type="checkbox" id="Keep me signed in">
+        <label for="Keep me signed in">Keep me signed in</label>
+        </div>
+        
+        <div class="button">
+            <Button class="signup">Sign up</Button>
+        </div>
+
+        <div class="button2">
+            <button class="CTA">Create an Account</button>
+        </div>
+        
+       
+    </div>
+</body>
+</html>

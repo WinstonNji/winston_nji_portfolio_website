@@ -1,0 +1,114 @@
+.aboutMe{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    height: fit-content;
+    width: 100vw;
+
+    opacity: 0;
+    animation: fade-in linear forwards;
+    animation-timeline: view();
+    animation-range: 250px 400px;
+}
+
+.aboutMeMessage{
+    font-size: 0.6rem;
+    width: 90%;
+    align-self: center;
+    line-height: 1.3;
+}
+
+.tabSection {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap; /* Allow wrapping if necessary */
+    width: 80%;
+    align-self: center;
+    padding-top: 10px;
+
+    scale: .7;
+    opacity: 0;
+    animation: fade-in linear forwards;
+    animation-timeline: view();
+    animation-range: 200px 500px;
+}
+
+.tabSection label {
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 5px;
+    cursor: pointer;
+    margin-right: 10px;
+    font-size: 0.6rem;
+}
+
+input[type="radio"]:checked + label{
+    border-bottom: 2px solid #F25C61;
+}
+
+.tabContent {
+    opacity: 0.85;
+    display: none;
+    order: 1;
+}
+
+.tabContent h1 {
+    padding-top: 10px;
+    font-size: 0.75rem;
+    color: #F25C61;
+    margin-bottom: 5px;
+}
+
+.tabContent p {
+    font-size: 0.6rem;
+    color: white;
+    padding-left: 10px;
+    border-left: 2px solid white;
+    line-height: 1.4; /* Adjust this value for more or less spacing */
+    
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+input[type="radio"]:checked + label + .tabContent{
+    transition: opacity 1s;
+    opacity: 1;
+    display: block;
+}
+
+@media (min-width: 425px){
+    .aboutMe{
+        height: fit-content;
+    }
+}
+
+
+@media (min-width: 768px){
+    .aboutMe{
+        height: fit-content;
+        opacity: 0;
+    }
+
+    .aboutMeMessage{
+        font-size: 1.1rem;
+        padding-bottom: 20px;
+    }
+
+    .tabSection label{
+        font-size: 1rem;
+        margin-bottom: 15px;
+    }
+
+    .tabContent h1{
+        font-size: 1rem;
+    }
+
+    .tabContent p{
+        font-size: 0.9rem;
+        padding-left: 10px;
+        border-left: 3px solid white;
+    }
+}
+

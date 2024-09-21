@@ -1,0 +1,54 @@
+a{
+    text-decoration: none;
+    color: none;
+}
+
+.Certificates {
+    margin-top: 100px;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 200px;
+
+    opacity: 0;
+    animation: fade-in linear forwards;
+    animation-timeline: view();
+    animation-range: 200px 500px;
+}
+
+.Certificates img{
+    width: 350px;
+    scale: .7;
+    opacity: 0;
+    animation: fade-in linear forwards;
+    animation-timeline: view();
+    animation-range: 200px 500px;
+}
+
+.Certificates .AI, .IBM, .UDEMY{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.Certificates h4{
+    padding-bottom: 30px;
+    color: #F25C61;
+}
+
+@media (min-width: 768px){
+    .Certificates img{
+        width: 500px;
+    }
+
+    .Certificates h4{
+        font-size: 1.2rem;
+    }
+}
+
