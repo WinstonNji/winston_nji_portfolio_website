@@ -23,6 +23,7 @@
     gap: 30px;
     overflow-x: scroll;
     width: 100vw;
+    overflow-y: hidden;
 }
 
 .Project #MobileProjects .display, .Project #Javascript .display {
