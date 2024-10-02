@@ -53,10 +53,19 @@
                 <div class="buttons">
                     
                     <div class="contactButtons">
-                        <button>Download CV</button>
-                        <a href="#contactMe">
-                            <button>Contact Me</button>
+                        <a href="assets/Winston_Nji_Professional_CV.pdf" download>
+                            <button class="download-cv">
+                                Download CV
+                            </button>
                         </a>
+                        
+                        
+                        
+                        <button id="contactMebtn">
+                            <a href="#contactMe">
+                                Contact Me
+                            </a>
+                        </button>
                     </div>
                     
 
@@ -459,15 +468,18 @@
                     </a>
                     
                 </div>
-                <button class="download-cv">Download CV</button>
+                
+                <button class="download-cv">
+                    <a href="assets/Winston_Nji_Professional_CV.pdf" target="_blank" >Download CV</a>
+                </button>
             </div>
     
             <div class="contact-form">
                 <form action="#">
-                    <input type="text" placeholder="Your Name" required>
-                    <input type="email" placeholder="Your Email" required>
-                    <textarea placeholder="Your Message" rows="4" required></textarea>
-                    <button type="submit">Submit</button>
+                    <input  id="name" type="text" placeholder="Your Name" required>
+                    <input id="email"  type="email" placeholder="Your Email" required>
+                    <textarea id="message" placeholder="Your Message" rows="4" required></textarea>
+                    <button type="button" class="email-btn" onclick="sendEmail()">Contact</button>
                 </form>
             </div>
         </section>
