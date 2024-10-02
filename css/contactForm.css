@@ -115,6 +115,7 @@
         border-radius: 5px;
         font-size: 1rem;
         margin-left: -1px;
+        width: fit-content;
     }
 
     .download-cv {
