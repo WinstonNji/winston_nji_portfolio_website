@@ -13,6 +13,11 @@ ul a{
     color: white;
 }
 
+button a{
+    color: white;
+}
+
+
 html,body{
     overflow-x: hidden;
     width: 100vw;

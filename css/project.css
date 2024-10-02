@@ -142,12 +142,12 @@
         display: flex;
         flex-direction: row;
         justify-content: flex-start;
-        width: 93vw;
+        width: 95vw;
         overflow-x: scroll;
     }
 
     .Project #Javascript .display{
-        width: 93vw;
+        width: 95vw;
     }
 }
 
