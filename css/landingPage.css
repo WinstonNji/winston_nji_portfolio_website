@@ -35,7 +35,7 @@
     font-size: 0.7rem;
     margin-bottom: 10px;
 }
-.buttons{
+.landingContainer .buttons{
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
@@ -45,6 +45,12 @@
     color: white;
     font-size: 1rem;
 }
+
+.landingContainer .buttons button{
+    margin-bottom: 5px;
+}
+
+
 button{
     width: 70px;
     margin-left: 10px;
@@ -59,6 +65,8 @@ button{
     cursor: pointer;
 }
 
+
+
 button:hover {
     background-color: #d14a4c;
 }
@@ -66,7 +74,8 @@ button:hover {
 .icons{
     display: flex;
     bottom: 3px;
-    left: 38%;
+    top: 25px;
+    left: 36%;
     justify-content: space-evenly;
     position: absolute;
     width: 50px;

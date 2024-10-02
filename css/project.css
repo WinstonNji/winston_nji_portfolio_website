@@ -78,7 +78,7 @@
 
 .info p{
     font-size: 0.6rem;
-    max-width: 100%
+    max-width: 100%;
 }
 
 .info .buttons{
@@ -103,6 +103,10 @@
 .info .buttons button svg{
     fill: white;
     margin-right: 5px;
+}
+
+#techplustrust .buttons {
+    top: 55px;
 }
 
 .Project .display {
@@ -138,12 +142,12 @@
         display: flex;
         flex-direction: row;
         justify-content: flex-start;
-        width: 95vw;
+        width: 93vw;
         overflow-x: scroll;
     }
 
     .Project #Javascript .display{
-        width: 95vw;
+        width: 93vw;
     }
 }
 
@@ -236,7 +240,7 @@
         justify-content: center;
         align-self: flex-end;
         position: absolute;
-        bottom: 0;
+        bottom: 10px;
     }
     
     .info .buttons button{
