@@ -1,6 +1,4 @@
-function sendEmail(event) {
-    event.preventDefault(); // Prevents form from submitting the default way
-
+function sendEmail() {
     const name = document.getElementById('name').value;
     const email = document.getElementById('email').value;
     const message = document.getElementById('message').value;
