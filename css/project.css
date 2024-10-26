@@ -26,7 +26,7 @@
     overflow-y: hidden;
 }
 
-.Project #MobileProjects .display, .Project #Javascript .display {
+.Project #MobileProjects .display, .Project #Javascript .display, .Project #React .display {
     scale: .7;
     opacity: 0;
     animation: fade-in linear forwards;
@@ -34,7 +34,7 @@
     animation-range: 250px 500px;
 }
 
-.Project #MobileProjects, .Project #Javascript{
+.Project #MobileProjects, .Project #Javascript, .Project #React .display, .Project #React h2 {
     scale: .7;
     opacity: 0;
     animation: fade-in linear forwards;
@@ -54,7 +54,7 @@
 }
 
 .projectContainer:hover {
-    transform: translateY(-3px);
+    transform: translateY(-5px);
     box-shadow: 0px 0px 10px white; /* Increase shadow for the "float" effect */
   }
 
@@ -88,7 +88,7 @@
     flex-direction: row;
     justify-content: center;
     position: absolute;
-    top: 65px;
+    top: 70px;
     left: 95px;
 }
 
@@ -146,8 +146,8 @@
         overflow-x: scroll;
     }
 
-    .Project #Javascript .display{
-        width: 95vw;
+    .Project #Javascript .display, .Project #React .display{
+        width: 93vw;
     }
 }
 
@@ -197,7 +197,7 @@
         animation-range: 250px 500px;
     }
 
-    .Project #Javascript .display{
+    .Project #Javascript .display, .Project #React .display{
         display: flex;
         flex-direction: row;
         overflow-x: scroll;
@@ -272,7 +272,7 @@
         max-width: 372px;
     }
 
-    .Project #Javascript .display, .Project #HTMLCSS .display{
+    .Project #Javascript .display, .Project #HTMLCSS .display, .Project #React .display{
         width: 96vw;
     }
 }

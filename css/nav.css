@@ -5,9 +5,6 @@
     box-sizing: border-box;
 }
 
-@keyframes fade-in{
-    to {scale: 1; opacity: 1;}
-}
 
 ul a{
     color: white;
