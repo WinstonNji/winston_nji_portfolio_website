@@ -3,555 +3,344 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Winston Nji - Full Stack Developer</title>
     
-    <link rel="icon" href="logo/image.png">
-
-    <title>Winston Portfolio Website</title>
-
-    <link rel="stylesheet" href="css/nav.css">
-    <link rel="stylesheet" href="css/animation.css">
-    <link rel="stylesheet" href="css/landingPage.css">
-    <link rel="stylesheet" href="css/aboutMe.css">
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/about.css">
     <link rel="stylesheet" href="css/project.css">
-    <link rel="stylesheet" href="css/Certificats.css">
-    <link rel="stylesheet" href="css/contactForm.css">
-    <!-- Importing font -->
+    <link rel="stylesheet" href="css/skills.css">
+    <link rel="stylesheet" href="css/contact.css">
+    
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-      <nav>
-        
-        <h1 class="navLogo"> <a href="#home">Winston</a></h1>
-        </a>
-        <ul class="navElements">
-            <a href="#home">
-                <li>Home</li>
-            </a>
-            <a href="#aboutMe">
-                <li>About</li>
-            </a>
-            <a href="#projects">
-                <li>Project</li>
-            </a>
-            <a href="#myCertification">
-                <li>Certificates</li>
-            </a>
-            <a href="#contactMe">
-                <li>Contact</li>
-            </a>
-        </ul>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#home" class="nav-logo">Winston</a>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
     </nav>
-    
-    <main>
-        <div id="home" class="landingContainer">
-            <div class="greeting">
-                <h1>Hi, I'm <span class="myName">Winston Nji</span> <span class="jobTitle">Entry Level Frontend Developer</span>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    Hi, I'm <span class="highlight">Winston Nji</span>
                 </h1>
-
-                <div class="buttons">
-                    
-                    <div class="contactButtons">
-                        <a href="assets/Winston_Nji_Professional_CV.pdf" download>
-                            <button class="download-cv">
-                                Download CV
-                            </button>
-                        </a>
-                        
-                        
-                        
-                        <button id="contactMebtn">
-                            <a href="#contactMe">
-                                Contact Me
-                            </a>
-                        </button>
-                    </div>
-                    
-
-                    <div class="icons">
-                        <a href="https://github.com/WinstonNji" target="_blank">
-                            <img src="https://img.icons8.com/?size=100&id=62856&format=png&color=ffffff" alt="Github Logo" loading="lazy">
-                        </a>
-                        
-                        <a href="https://www.linkedin.com/in/winston-nji-5363ab310/" target="_blank">
-                            <img src="https://img.icons8.com/?size=100&id=ZmG5l3ueI6FO&format=png&color=ffffff" alt="Linkedin Logo" loading="lazy">
-                        </a>
-                        
-                    </div>
-                </div>
-            </div>
-            <div class="myImg">
-                <img src="logo/mypfp.jpg" alt="my_Picture" loading="lazy">>
-            </div>
-            
-        </div> 
-        <div class="aboutMe">
-            <p id="aboutMe" style="text-align: center; color: white; font-size: 0.65rem;">Get to know me</p>   
-            <h1 style="text-align: center; padding-bottom: 30px;  font-size: 2rem; color: white;  text-shadow: 0px 0px 10px #F25C61;">ABOUT ME</h1> 
-        
-            <div class="aboutMeMessage">
-                I am a Cameroonian currently studying Software Engineering at the African Leadership University in Rwanda, where I am a first-year student. I plan to specialize in full-stack software engineering, aiming to develop a comprehensive skill set in both front-end and back-end technologies. <br><br>
-                In addition to my studies, I am also the co-founder of WiyoRent, a company dedicated to helping students find affordable housing in Rwanda. This venture reflects my passion for leveraging technology to address real-world challenges and support fellow students in their pursuit of education. Through my academic journey and entrepreneurial efforts, I aspire to contribute positively to the tech landscape in Africa.
-            </div>
-
-            <div class="tabSection">
-                <input type="radio" id="experience" name="Checked" checked="checked">
-                <label for="experience">Experience</label>
-                <div class="tabContent">
-                    <h1>FrontEnd Developer</h1>
-                    <p>As a front-end developer, I built a showcase website for an agricultural project supporting mango farmers in Ivory Coast with sustainable post-harvest facilities. Using HTML and CSS, I designed an engaging interface to communicate the project's goals. While not mobile-responsive, the site featured clear visuals and calls-to-action. This experience enhanced my technical skills and showed how technology can address agricultural challenges.</p>
-
-                    <h1>WiyoRent Co-Founder</h1>
-                    <p>As the co-founder and web developer of WiyoRent, I built a mobile-responsive platform showcasing student-focused house listings in Rwanda. The site handles diverse data, including images, listing details, and prices, ensuring comprehensive user access. I utilized HTML, CSS, and JavaScript to create an intuitive interface optimized for mobile devices. Since launching, the platform has served over 40 students, and this project has significantly enhanced my technical skills in web development, data management, and responsive design.</p>
-
-                    <h1>Tech+ Trust Web-developer</h1>
-                    <p>
-                        As the web developer for Tech+ Trust Ltd, I use HTML, CSS, and JavaScript to build and maintain a mobile-responsive platform showcasing incubator listings and product details. The company helps poultry farmers reduce losses with incubators that ensure a 95% hatching success rate. I manage data like images and specs to provide easy access to product information. This ongoing role has strengthened my technical skills while supporting a company that improves agricultural productivity for local farmers.
-                    </p>
-                </div>
-
+                <p class="hero-subtitle">Machine Learning Engineer</p>
+                <p class="hero-tagline">Building innovative solutions that bridge technology and real-world impact</p>
                 
-
-                <input type="radio" id="education" name="Checked">
-                <label for="education">Education</label>
-                <div class="tabContent">
-                    <h1>The American School of Kinshasa</h1>
-                    <p>I graduated from the American School of Kinshasa in May 2023, where I completed the International Baccalaureate (IB) program. This rigorous academic experience equipped me with critical thinking and analytical skills, preparing me for my future studies.
-                    </p>
-                    <h1>African LeaderShip University</h1>
-                    <p>I am currently a first-year student at the African Leadership University, where I began my studies in January 2024. As a class representative, I actively engage with my peers and faculty to enhance our academic experience. I am pursuing a degree in Software Engineering, with plans to specialize in full-stack engineering. I expect to graduate in 2027, equipping myself with the skills and knowledge necessary to excel in both front-end and back-end development. My education at ALU is not only shaping my technical abilities but also fostering my leadership skills and commitment to making a positive impact in the tech industry.</p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">View Projects</a>
+                    <a href="#contact" class="btn btn-secondary">Get In Touch</a>
                 </div>
-            </div>
-        </div> 
-        <div id="projects" class="Project">
-            <p style="text-align: center; font-size: 0.65rem; margin-bottom:-4px;">Explore my projects</p>
-            <h1 
-                style="text-align: center; 
-                        padding-bottom: 50px;
-                        font-size: 2.7rem;
-                        color: white; 
-                        text-shadow: 0px 0px 10px #F25C61;"
-            >Projects</h1>
-            <div id="HTMLCSS">
-                <h2 >HTML&CSS</h2>
-                <div class="display">
-                    <div class="projectContainer">
-                        <img src="images/HTML_Project/youtubeClone.png"  alt="Youtube Clone thumbnail" loading="lazy">
-                        <div class="info">
-                            <h5>Youtube Clone</h5>
-                            <p>This YouTube clone app is a responsive web application built with HTML and CSS, designed to replicate the core features of the popular video-sharing platform.</p>
-                            <div class="buttons">
-                                <a href="https://github.com/WinstonNji/winston_nji_portfolio_website/tree/main/portfolio_projects/HTML/youtube" target="_blank">
-                                    <button>Github<svg xmlns="http://www.w3.org/2000/svg" height="10px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M200-120q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h280v80H200v560h560v-280h80v280q0 33-23.5 56.5T760-120H200Zm188-212-56-56 372-372H560v-80h280v280h-80v-144L388-332Z"/></svg></button>
-                                </a>
-                                <a href="portfolio_projects/HTML/youtube/index.html" target="_blank">
-                                    <button>View<svg xmlns="http://www.w3.org/2000/svg" height="10px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M200-120q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h280v80H200v560h560v-280h80v280q0 33-23.5 56.5T760-120H200Zm188-212-56-56 372-372H560v-80h280v280h-80v-144L388-332Z"/></svg></button>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="projectContainer">
-                        <img src="images/HTML_Project/Agriculture.png" alt="Agriculture project proposal thumbnail" loading="lazy">
-                        <div class="info">
-                            <h5>Agriculture Project Proposal Website.</h5>
-                            <p>This website serves as a comprehensive tool aimed at promoting sustainable mango harvesting practices in Ivory Coast through the implementation of solar-powered cooling warehouses.</p>
-                            <div class="buttons">
-                            <a href="https://github.com/WinstonNji/winston_nji_portfolio_website/tree/main/portfolio_projects/HTML/E-lab%20website" target="_blank">
-                                <button>Github<svg xmlns="http://www.w3.org/2000/svg" height="10px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M200-120q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h280v80H200v560h560v-280h80v280q0 33-23.5 56.5T760-120H200Zm188-212-56-56 372-372H560v-80h280v280h-80v-144L388-332Z"/></svg></button>
-                            </a>
-                                
-                                <a href="https://delightful-marshmallow-78f138.netlify.app/" target="_blank">
-                                    <button>View<svg xmlns="http://www.w3.org/2000/svg" height="10px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M200-120q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h280v80H200v560h560v-280h80v280q0 33-23.5 56.5T760-120H200Zm188-212-56-56 372-372H560v-80h280v280h-80v-144L388-332Z"/></svg></button>
-                                </a>
-                                
-                            </div>
-                        </div>
-                    </div>
-                    <div class="projectContainer">
-                        <img src="images/HTML_Project/signUp.png" alt="sign_up_page" loading="lazy">
-                        <div class="info">
-                            <h5 style="flex: wrap;">Modern SignUp Page</h5>
-                            <p>This Quick Signup interactive page focuses on delivering a visually appealing and engaging user experience through advanced CSS styling techniques. </p>
-                            <div class="buttons">
-                                <a href="https://github.com/WinstonNji/winston_nji_portfolio_website/tree/main/portfolio_projects/HTML/quick%20practices" target="_blank">
-                                    <button>Github<svg xmlns="http://www.w3.org/2000/svg" height="10px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M200-120q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h280v80H200v560h560v-280h80v280q0 33-23.5 56.5T760-120H200Zm188-212-56-56 372-372H560v-80h280v280h-80v-144L388-332Z"/></svg></button>
-                                </a>
-                                
-                                <a href="portfolio_projects/HTML/quick practices/index.html" target="_blank">
-                                    <button>View<svg xmlns="http://www.w3.org/2000/svg" height="10px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M200-120q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h280v80H200v560h560v-280h80v280q0 33-23.5 56.5T760-120H200Zm188-212-56-56 372-372H560v-80h280v280h-80v-144L388-332Z"/></svg></button>
-                                </a>
-                                
-                            </div>
-                        </div>
-                    </div>
-                </div>   
-            </div>
-            
-            <div id="MobileProjects">
-                <h2 style="padding-top: 50px;">REAL WORLD PROJECTS</h2>
-                <div class="display">
-                    <div class="projectContainer">
-                        <img src="images/mobileResProjects/wiyorent.png" alt="sign_up_page" loading="lazy">
-                        <div class="info">
-                            <h5>Student Housing Startup</h5>
-                            <p>WiyoRent is a startup I co-founded. It's a platform whose aim is to help students find affordable housing in Rwanda, particularly in Kigali.</p>
-                            <div class="buttons">
-                                <a href="https://github.com/WiyoRent/WiyoRent_Website" target="_blank">
-                                    <button>Github<svg xmlns="http://www.w3.org/2000/svg" height="10px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M200-120q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h280v80H200v560h560v-280h80v280q0 33-23.5 56.5T760-120H200Zm188-212-56-56 372-372H560v-80h280v280h-80v-144L388-332Z"/></svg></button>
-                                </a>
-
-                                <a href="https://wiyorent.com/" target="_blank">
-                                    <button>View<svg xmlns="http://www.w3.org/2000/svg" height="10px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M200-120q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h280v80H200v560h560v-280h80v280q0 33-23.5 56.5T760-120H200Zm188-212-56-56 372-372H560v-80h280v280h-80v-144L388-332Z"/></svg></button>
-                                </a>
-                                
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="projectContainer">
-                        <img src="images/mobileResProjects/tech+trust.png" alt="tech+trust thumbnail image" loading="lazy">
-                        <div id="techplustrust"  class="info">
-                            <h5>Tech+ Trust</h5>
-                            <p>I collaborated with Tech+ Trust Ltd to develop their website. Tech+ Trust offers locally-made incubators with a 95% hatching success rate
-                            </p>
-                            <div class="buttons">
-                                <a href="https://github.com/Winnie-Wide-Web/Tech-Trust" target="_blank">
-                                    <button>Github<svg xmlns="http://www.w3.org/2000/svg" height="10px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M200-120q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h280v80H200v560h560v-280h80v280q0 33-23.5 56.5T760-120H200Zm188-212-56-56 372-372H560v-80h280v280h-80v-144L388-332Z"/></svg></button>
-                                </a>
-                                
-                                <a href="https://winnie-wide-web.github.io/Tech-Trust/" target="_blank">
-                                    <button>View<svg xmlns="http://www.w3.org/2000/svg" height="10px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M200-120q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h280v80H200v560h560v-280h80v280q0 33-23.5 56.5T760-120H200Zm188-212-56-56 372-372H560v-80h280v280h-80v-144L388-332Z"/></svg></button>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                        
-                    
-                </div>
-            </div>
-
-            <div id="Javascript">
-                <h2 style="padding-top: 50px;">JAVASCRIPT</h2>
-                <div class="display">
-
-                    <div class="projectContainer">
-                        <img src="images/mobileResProjects/TravelAdvisor.png" alt="Travel thumbnail" loading="lazy">
-                        <div class="info">
-                            <h5>Travel Advisor App</h5>
-                            <p>The Travel Advisor helps users find tourist activities by entering a city. It uses the Geocoding API to get location coordinates, Amadeus API for activity recommendations, and Time Zone API for timezone details.</p>
-                            <div class="buttons">
-                                <a href="https://github.com/WinstonNji/JS_Coursera_Final_Project" target="_blank">
-                                    <button>Github<svg xmlns="http://www.w3.org/2000/svg" height="10px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M200-120q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h280v80H200v560h560v-280h80v280q0 33-23.5 56.5T760-120H200Zm188-212-56-56 372-372H560v-80h280v280h-80v-144L388-332Z"/></svg></button>
-                                </a>
-                                
-                                <a href="https://winstonnji.github.io/JS_Coursera_Final_Project/" target="_blank">
-                                    <button>View<svg xmlns="http://www.w3.org/2000/svg" height="10px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M200-120q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h280v80H200v560h560v-280h80v280q0 33-23.5 56.5T760-120H200Zm188-212-56-56 372-372H560v-80h280v280h-80v-144L388-332Z"/></svg></button>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="projectContainer">
-                        <img src="images/javasciptProjects/weatherApp.png" alt="Weather App thumbnail" loading="lazy">
-                        <div class="info">
-                            <h5>Weather App</h5>
-                            <p>
-                                The Weather App provides real-time temperature, humidity, and wind speed by entering a city, using the OpenWeatherMap API. It's a handy tool for daily planning.</p>
-                            <div class="buttons">
-                                <a href="https://github.com/WinstonNji/winston_nji_portfolio_website/tree/main/portfolio_projects/Javascript/Weather_API" target="_blank">
-                                    <button>Github<svg xmlns="http://www.w3.org/2000/svg" height="12px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M200-120q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h280v80H200v560h560v-280h80v280q0 33-23.5 56.5T760-120H200Zm188-212-56-56 372-372H560v-80h280v280h-80v-144L388-332Z"/></svg></button>
-                                </a>
-                                
-                                <a href="portfolio_projects/Javascript/Weather_API/index.html" target="_blank">
-                                    <button>View<svg xmlns="http://www.w3.org/2000/svg" height="10px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M200-120q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h280v80H200v560h560v-280h80v280q0 33-23.5 56.5T760-120H200Zm188-212-56-56 372-372H560v-80h280v280h-80v-144L388-332Z"/></svg></button>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="projectContainer">
-                        <img src="images/javasciptProjects/dictionaryApp.png" alt="Dictionary thumbnail" loading="lazy">
-                        <div class="info">
-                            <h5>Dictionary App</h5>
-                            <p>The Dictionary App utilizes the Free Dictionary API to provide users with comprehensive word definitions, and phonetic, figure of speech, examples.</p>
-                            <div class="buttons">
-                                <a href="https://github.com/WinstonNji/winston_nji_portfolio_website/tree/main/portfolio_projects/Javascript/Dictionary_App" target="_blank">
-                                    <button>Github<svg xmlns="http://www.w3.org/2000/svg" height="10px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M200-120q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h280v80H200v560h560v-280h80v280q0 33-23.5 56.5T760-120H200Zm188-212-56-56 372-372H560v-80h280v280h-80v-144L388-332Z"/></svg></button>
-                                </a>
-                                
-
-                                <a href="portfolio_projects/Javascript/Dictionary_App/index.html" target="_blank">
-                                    <button>View<svg xmlns="http://www.w3.org/2000/svg" height="10px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M200-120q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h280v80H200v560h560v-280h80v280q0 33-23.5 56.5T760-120H200Zm188-212-56-56 372-372H560v-80h280v280h-80v-144L388-332Z"/></svg></button>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="projectContainer">
-                        <img src="images/javasciptProjects/cocktailApp.png" alt="Clock  thumbnail" loading="lazy">
-                        <div class="info">
-                            <h5>CockTail App</h5>
-                            <p>The CocktailApp leverages NinjaAPI's Cocktail API to provide cocktail names, ingredients, and preparation instructions based on user input, which can be either a cocktail name or an ingredient.</p>
-                            <div class="buttons">
-                                <a href="https://github.com/WinstonNji/winston_nji_portfolio_website/tree/main/portfolio_projects/Javascript/cocktail-App" target="_blank">
-                                    <button>Github<svg xmlns="http://www.w3.org/2000/svg" height="10px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M200-120q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h280v80H200v560h560v-280h80v280q0 33-23.5 56.5T760-120H200Zm188-212-56-56 372-372H560v-80h280v280h-80v-144L388-332Z"/></svg></button>
-                                </a>
-                                
-                                <a href="portfolio_projects/Javascript/cocktail-App/index.html" target="_blank">
-                                    <button>View<svg xmlns="http://www.w3.org/2000/svg" height="10px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M200-120q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h280v80H200v560h560v-280h80v280q0 33-23.5 56.5T760-120H200Zm188-212-56-56 372-372H560v-80h280v280h-80v-144L388-332Z"/></svg></button>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="projectContainer">
-                        <img src="images/javasciptProjects/pokemonApi.png" alt="pokemonApi thumbnail" loading="lazy">
-                        <div class="info">
-                            <h5>Pokemon App</h5>
-                            <p>The Pokémon App lets users enter a Pokémon's name to get its image, name, and a background matching its type, powered by the PokéAPI.
-                            </p>
-                            <div class="buttons">
-                                <a href="https://github.com/WinstonNji/winston_nji_portfolio_website/tree/main/portfolio_projects/Javascript/Pokemon_API" target="_blank">
-                                    <button>Github<svg xmlns="http://www.w3.org/2000/svg" height="10px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M200-120q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h280v80H200v560h560v-280h80v280q0 33-23.5 56.5T760-120H200Zm188-212-56-56 372-372H560v-80h280v280h-80v-144L388-332Z"/></svg></button>
-                                </a>
-                                
-                                <a href="portfolio_projects/Javascript/Pokemon_API/index.html" target="_blank">
-                                    <button>View<svg xmlns="http://www.w3.org/2000/svg" height="10px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M200-120q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h280v80H200v560h560v-280h80v280q0 33-23.5 56.5T760-120H200Zm188-212-56-56 372-372H560v-80h280v280h-80v-144L388-332Z"/></svg></button>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="projectContainer">
-                        <img src="images/javasciptProjects/todoApp.png" alt="todoApp thumbnail" loading="lazy">
-                        <div class="info">
-                            <h5>T0-Do App</h5>
-                            <p>The To-Do App lets users add and delete tasks, using local storage to save them even after closing the browser.</p>
-                            <div class="buttons">
-                                <a href="https://github.com/WinstonNji/winston_nji_portfolio_website/tree/main/portfolio_projects/Javascript/Advance%20to-do-app" target="_blank">
-                                    <button>Github<svg xmlns="http://www.w3.org/2000/svg" height="10px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M200-120q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h280v80H200v560h560v-280h80v280q0 33-23.5 56.5T760-120H200Zm188-212-56-56 372-372H560v-80h280v280h-80v-144L388-332Z"/></svg></button>
-                                </a>
-                                
-                                <a href="portfolio_projects/Javascript/Advance to-do-app/index.html" target="_blank">
-                                    <button>View<svg xmlns="http://www.w3.org/2000/svg" height="10px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M200-120q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h280v80H200v560h560v-280h80v280q0 33-23.5 56.5T760-120H200Zm188-212-56-56 372-372H560v-80h280v280h-80v-144L388-332Z"/></svg></button>
-                                </a>
-                                
-                            </div>
-                        </div>
-                    </div>
-                    <div class="projectContainer">
-                        <img src="images/javasciptProjects/PassWord Generator.png" alt="PassWordGenerator thumbnail" loading="lazy">
-                        <div class="info">
-                            <h5>PassWord Generator</h5>
-                            <p>The Password Generator App lets users create secure, customizable passwords by choosing to include letters, numbers, and symbols, tailored to their security needs.</p>
-                            <div class="buttons">
-                                <a href="https://github.com/WinstonNji/winston_nji_portfolio_website/tree/main/portfolio_projects/Javascript/passwordGenerator" target="_blank">
-                                    <button>Github<svg xmlns="http://www.w3.org/2000/svg" height="10px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M200-120q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h280v80H200v560h560v-280h80v280q0 33-23.5 56.5T760-120H200Zm188-212-56-56 372-372H560v-80h280v280h-80v-144L388-332Z"/></svg></button>
-                                </a>
-                                
-                                <a href="portfolio_projects/Javascript/passwordGenerator/index.html" target="_blank">
-                                    <button>View<svg xmlns="http://www.w3.org/2000/svg" height="10px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M200-120q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h280v80H200v560h560v-280h80v280q0 33-23.5 56.5T760-120H200Zm188-212-56-56 372-372H560v-80h280v280h-80v-144L388-332Z"/></svg></button>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="projectContainer">
-                        <img src="images/javasciptProjects/stopWacth.png" alt="stopWacth thumbnail" loading="lazy">
-                        <div class="info">
-                            <h5>StopWatch</h5>
-                            <p>
-                                The Stopwatch App enables precise time tracking for activities using JavaScript's Date() methods for accurate calculations and display.
-                            </p>
-                            <div class="buttons">
-                                <a href="https://github.com/WinstonNji/winston_nji_portfolio_website/tree/main/portfolio_projects/Javascript/StopWatch" target="_blank">
-                                    <button>Github<svg xmlns="http://www.w3.org/2000/svg" height="10px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M200-120q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h280v80H200v560h560v-280h80v280q0 33-23.5 56.5T760-120H200Zm188-212-56-56 372-372H560v-80h280v280h-80v-144L388-332Z"/></svg></button>
-                                </a>
-                                
-                                <a href="portfolio_projects/Javascript/StopWatch/index.html" target="_blank">
-                                    <button>View<svg xmlns="http://www.w3.org/2000/svg" height="10px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M200-120q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h280v80H200v560h560v-280h80v280q0 33-23.5 56.5T760-120H200Zm188-212-56-56 372-372H560v-80h280v280h-80v-144L388-332Z"/></svg></button>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="projectContainer">
-                        <img src="images/javasciptProjects/Simple_Interest.png" alt="sign_up_page" loading="lazy">
-                        <div class="info">
-                            <h5>Simple Interest Calculator</h5>
-                            <p>The Simple Interest Calculator allows users to easily calculate the interest earned or paid on a principal amount over a specified period at a given interest rate. </p>
-                            <div class="buttons">
-                                <a href="https://github.com/WinstonNji/winston_nji_portfolio_website/tree/main/portfolio_projects/Javascript/Interest%20Calculator" target="_blank">
-                                    <button>Github<svg xmlns="http://www.w3.org/2000/svg" height="10px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M200-120q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h280v80H200v560h560v-280h80v280q0 33-23.5 56.5T760-120H200Zm188-212-56-56 372-372H560v-80h280v280h-80v-144L388-332Z"/></svg></button>
-                                </a>
-                                
-                                <a href="portfolio_projects/Javascript/Interest Calculator/index.html" target="_blank">
-                                    <button>View<svg xmlns="http://www.w3.org/2000/svg" height="10px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M200-120q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h280v80H200v560h560v-280h80v280q0 33-23.5 56.5T760-120H200Zm188-212-56-56 372-372H560v-80h280v280h-80v-144L388-332Z"/></svg></button>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="projectContainer">
-                        <img src="images/javasciptProjects/imageSlider.png" alt="imageSlider thumbnail" loading="lazy">
-                        <div class="info">
-                            <h5>Image Slider</h5>
-                            <p>The Image Slider is a dynamic web component that allows users to view a series of images in a visually engaging manner. </p>
-                            <div class="buttons">
-                                <a href="https://github.com/WinstonNji/winston_nji_portfolio_website/tree/main/portfolio_projects/Javascript/Image%20Slider%20JS" target="_blank">
-                                    <button>Github<svg xmlns="http://www.w3.org/2000/svg" height="10px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M200-120q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h280v80H200v560h560v-280h80v280q0 33-23.5 56.5T760-120H200Zm188-212-56-56 372-372H560v-80h280v280h-80v-144L388-332Z"/></svg></button>
-                                </a>
-                                
-                                <a href="portfolio_projects/Javascript/Image Slider JS/index.html" target="_blank">
-                                    <button>View<svg xmlns="http://www.w3.org/2000/svg" height="10px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M200-120q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h280v80H200v560h560v-280h80v280q0 33-23.5 56.5T760-120H200Zm188-212-56-56 372-372H560v-80h280v280h-80v-144L388-332Z"/></svg></button>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="projectContainer">
-                        <img src="images/javasciptProjects/Clock.png" alt="Clock  thumbnail" loading="lazy">
-                        <div class="info">
-                            <h5>Clock</h5>
-                            <p>The Clock App is a simple yet elegant application that displays the current time in a user-friendly format. </p>
-                            <div class="buttons">
-                                <a href="https://github.com/WinstonNji/winston_nji_portfolio_website/tree/main/portfolio_projects/Javascript/Clock%20JS">
-                                    <button>Github<svg xmlns="http://www.w3.org/2000/svg" height="10px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M200-120q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h280v80H200v560h560v-280h80v280q0 33-23.5 56.5T760-120H200Zm188-212-56-56 372-372H560v-80h280v280h-80v-144L388-332Z"/></svg></button>
-                                </a>
-                                
-                                <a href="portfolio_projects/Javascript/Clock JS/" target="_blank">
-                                    <button>View<svg xmlns="http://www.w3.org/2000/svg" height="10px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M200-120q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h280v80H200v560h560v-280h80v280q0 33-23.5 56.5T760-120H200Zm188-212-56-56 372-372H560v-80h280v280h-80v-144L388-332Z"/></svg></button>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div id="React">
-                <h2 style="padding-top: 50px;">REACT & TAILWIND CSS PROJECTS</h2>
-                <div class="display">
-
-                    <div class="projectContainer">
-                        <img src="images/ReactProjects/expenseTracker.jpg" alt="Expense-Tracker-thumbnail" loading="lazy">
-                        <div class="info">
-                            <h5>Expense Tracker</h5>
-                            <p>The Expense Tracker is a React app that allows users to track income and expenses in real time. It utilizes hooks like useState and useEffect, with child-to-parent data passing for dynamic updates, making it easy to manage finances.</p>
-                            <div class="buttons">
-                                <a href="https://github.com/WinstonNji/ExpenseTracker" target="_blank">
-                                    <button>Github<svg xmlns="http://www.w3.org/2000/svg" height="10px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M200-120q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h280v80H200v560h560v-280h80v280q0 33-23.5 56.5T760-120H200Zm188-212-56-56 372-372H560v-80h280v280h-80v-144L388-332Z"/></svg></button>
-                                </a>
-                                
-                                <a href="https://winstonnji.github.io/ExpenseTracker/" target="_blank">
-                                    <button>View<svg xmlns="http://www.w3.org/2000/svg" height="10px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M200-120q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h280v80H200v560h560v-280h80v280q0 33-23.5 56.5T760-120H200Zm188-212-56-56 372-372H560v-80h280v280h-80v-144L388-332Z"/></svg></button>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="projectContainer">
-                        <img src="images/ReactProjects/toDoApp.jpg" alt="To-Do-App-thumbnail" loading="lazy">
-                        <div class="info">
-                            <h5>React To-Do App</h5>
-                            <p>
-                                This project React helps users manage tasks effectively. It leverages useState for state management and includes features for reordering and enabling a personalized and flexible task organization experience.
-                            </p>
-                            <div class="buttons">
-                                <a href="https://github.com/WinstonNji/To-Do-React" target="_blank">
-                                    <button>Github<svg xmlns="http://www.w3.org/2000/svg" height="12px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M200-120q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h280v80H200v560h560v-280h80v280q0 33-23.5 56.5T760-120H200Zm188-212-56-56 372-372H560v-80h280v280h-80v-144L388-332Z"/></svg></button>
-                                </a>
-                                
-                                <a href=" https://winstonnji.github.io/To-Do-React/" target="_blank">
-                                    <button>View<svg xmlns="http://www.w3.org/2000/svg" height="10px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M200-120q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h280v80H200v560h560v-280h80v280q0 33-23.5 56.5T760-120H200Zm188-212-56-56 372-372H560v-80h280v280h-80v-144L388-332Z"/></svg></button>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="projectContainer">
-                        <img src="images/ReactProjects/recipeApp.jpg" alt="Recipe-App-thumbnail" loading="lazy">
-                        <div class="info">
-                            <h5>Recipe Finder App</h5>
-                            <p>The Recipe App is a  project that uses useState, useEffect, and Context API to fetch and display recipe details. Users can search recipes by dish, viewing ingredients and instructions from an external API.</p>
-                            <div class="buttons">
-                                <a href="https://github.com/WinstonNji/recipeApp" target="_blank">
-                                    <button>Github<svg xmlns="http://www.w3.org/2000/svg" height="10px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M200-120q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h280v80H200v560h560v-280h80v280q0 33-23.5 56.5T760-120H200Zm188-212-56-56 372-372H560v-80h280v280h-80v-144L388-332Z"/></svg></button>
-                                </a>
-                                
-
-                                <a href="https://winstonnji.github.io/recipeApp/" target="_blank">
-                                    <button>View<svg xmlns="http://www.w3.org/2000/svg" height="10px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M200-120q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h280v80H200v560h560v-280h80v280q0 33-23.5 56.5T760-120H200Zm188-212-56-56 372-372H560v-80h280v280h-80v-144L388-332Z"/></svg></button>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-        </div>  
-
-        <div id="myCertification" class="Certificates">
-            <p style="text-align: center; font-size: 0.7rem; margin-bottom:-4px;">My Certificates</p>
-            <h1 style="text-align: center; 
-            padding-bottom: 30px;
-            font-size: 2.7rem;
-            color: white; 
-            text-shadow: 0px 0px 10px #F25C61;">Certifications</h1>
-            <div class="AI">
-                <a href="images/Certificates/66-alx-aice-ai-career-essentials-certificate-winston-nji.png" target="_blank">
-                    <img src="images/Certificates/66-alx-aice-ai-career-essentials-certificate-winston-nji.png" alt="AI ALX COURSE CETIFICATE ON PROFESSIONAL DEVELOPMENT">
-                    <h4>AI Augmented Professional Development Skills in the Digitial Age</h4>
-                </a>
                 
-            </div>
-            <div class="IBM">
-                <a href="images/Certificates/ReactCertification1.pdf" target="_blank">
-                    <img src="images/Certificates/react.png" alt="JavaScript Programming Essentials" loading="lazy">
-                    <h4>React Basics</h4>
-                </a>
-                
-            </div>
-            <div class="IBM">
-                <a href="images/Certificates/Javascript_IBM.png" target="_blank">
-                    <img src="images/Certificates/Javascript_IBM.png" alt="JavaScript Programming Essentials" loading="lazy">
-                    <h4>JavaScript Programming Essentials</h4>
-                </a>
-                
-            </div>
-            <div class="UDEMY">
-                <a href="images/Certificates/Udemy Front-End.png" target="_blank">
-                    <img src="images/Certificates/Udemy Front-End.png" alt="Udemy Front-End image" loading="lazy">
-                    <h4>Complete Guide in HTML,CSS & Javascript: 2024 Edition Programming Essentials</h4>
-                </a>
+                <div class="hero-socials">
+                    <a href="https://github.com/WinstonNji" target="_blank" class="social-link" aria-label="GitHub">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                        </svg>
+                    </a>
+                    <a href="https://www.linkedin.com/in/winston-nji-5363ab310/" target="_blank" class="social-link" aria-label="LinkedIn">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                        </svg>
+                    </a>
+                </div>
             </div>
         </div>
+    </section>
 
-        <section id="contactMe" class="contact-section">
-            <div class="contact-info">
-                <h1 style="color: white; 
-                        text-shadow: 0px 0px 10px #F25C61;">Contact Me</h1>
-                <p><i class="fa fa-paper-plane"></i> winston00russel@gmail.com </p>
-                <p><i class="fa fa-phone"></i> +250 0794104177</p>
-                <div class="social-icons">
-                    <a href="https://www.linkedin.com/in/winston-nji-5363ab310/" target="_blank">
-                        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30" height="30" viewBox="0 0 50 50" fill="white" style="margin-bottom: 8px;">
-                            <path d="M 9 4 C 6.2504839 4 4 6.2504839 4 9 L 4 41 C 4 43.749516 6.2504839 46 9 46 L 41 46 C 43.749516 46 46 43.749516 46 41 L 46 9 C 46 6.2504839 43.749516 4 41 4 L 9 4 z M 9 6 L 41 6 C 42.668484 6 44 7.3315161 44 9 L 44 41 C 44 42.668484 42.668484 44 41 44 L 9 44 C 7.3315161 44 6 42.668484 6 41 L 6 9 C 6 7.3315161 7.3315161 6 9 6 z M 14 11.011719 C 12.904779 11.011719 11.919219 11.339079 11.189453 11.953125 C 10.459687 12.567171 10.011719 13.484511 10.011719 14.466797 C 10.011719 16.333977 11.631285 17.789609 13.691406 17.933594 A 0.98809878 0.98809878 0 0 0 13.695312 17.935547 A 0.98809878 0.98809878 0 0 0 14 17.988281 C 16.27301 17.988281 17.988281 16.396083 17.988281 14.466797 A 0.98809878 0.98809878 0 0 0 17.986328 14.414062 C 17.884577 12.513831 16.190443 11.011719 14 11.011719 z M 14 12.988281 C 15.392231 12.988281 15.94197 13.610038 16.001953 14.492188 C 15.989803 15.348434 15.460091 16.011719 14 16.011719 C 12.614594 16.011719 11.988281 15.302225 11.988281 14.466797 C 11.988281 14.049083 12.140703 13.734298 12.460938 13.464844 C 12.78117 13.19539 13.295221 12.988281 14 12.988281 z M 11 19 A 1.0001 1.0001 0 0 0 10 20 L 10 39 A 1.0001 1.0001 0 0 0 11 40 L 17 40 A 1.0001 1.0001 0 0 0 18 39 L 18 33.134766 L 18 20 A 1.0001 1.0001 0 0 0 17 19 L 11 19 z M 20 19 A 1.0001 1.0001 0 0 0 19 20 L 19 39 A 1.0001 1.0001 0 0 0 20 40 L 26 40 A 1.0001 1.0001 0 0 0 27 39 L 27 29 C 27 28.170333 27.226394 27.345035 27.625 26.804688 C 28.023606 26.264339 28.526466 25.940057 29.482422 25.957031 C 30.468166 25.973981 30.989999 26.311669 31.384766 26.841797 C 31.779532 27.371924 32 28.166667 32 29 L 32 39 A 1.0001 1.0001 0 0 0 33 40 L 39 40 A 1.0001 1.0001 0 0 0 40 39 L 40 28.261719 C 40 25.300181 39.122788 22.95433 37.619141 21.367188 C 36.115493 19.780044 34.024172 19 31.8125 19 C 29.710483 19 28.110853 19.704889 27 20.423828 L 27 20 A 1.0001 1.0001 0 0 0 26 19 L 20 19 z M 12 21 L 16 21 L 16 33.134766 L 16 38 L 12 38 L 12 21 z M 21 21 L 25 21 L 25 22.560547 A 1.0001 1.0001 0 0 0 26.798828 23.162109 C 26.798828 23.162109 28.369194 21 31.8125 21 C 33.565828 21 35.069366 21.582581 36.167969 22.742188 C 37.266572 23.901794 38 25.688257 38 28.261719 L 38 38 L 34 38 L 34 29 C 34 27.833333 33.720468 26.627107 32.990234 25.646484 C 32.260001 24.665862 31.031834 23.983076 29.517578 23.957031 C 27.995534 23.930001 26.747519 24.626988 26.015625 25.619141 C 25.283731 26.611293 25 27.829667 25 29 L 25 38 L 21 38 L 21 21 z"></path>
-                            </svg>
-                    </a>
-                    
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>I'm a Cameroonian <strong>Machine Learning</strong> student at African Leadership University in Rwanda, passionate about leveraging technology to solve real-world challenges and create meaningful impact.</p>
+                    <p>While specializing in <strong>Machine Learning</strong>, I also have hands-on experience in <strong>full-stack development</strong>. As co-founder of <strong>WiyoRent</strong>, I've helped over 150 students find affordable housing, including settling-in support and house visits in Rwanda. I build scalable web applications using modern technologies like <strong>Next.js, React, Angular, MERN stack and PERN stack</strong>, always focusing on user experience and practical solutions.</p>
                 </div>
-                
-                <button class="download-cv">
-                    <a href="assets/Winston_Nji_Professional_CV.pdf" target="_blank" >Download CV</a>
-                </button>
+            
+                <div class="about-highlights">
+                    <div class="highlight-card">
+                        <h3>150+</h3>
+                        <p>Students Helped</p>
+                    </div>
+                    <div class="highlight-card">
+                        <h3>2024</h3>
+                        <p>Started at ALU</p>
+                    </div>
+                </div>
             </div>
+        </div>
+    </section>
+
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">Technical Skills</h2>
+            
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <div class="skill-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="16 18 22 12 16 6"></polyline>
+                            <polyline points="8 6 2 12 8 18"></polyline>
+                        </svg>
+                    </div>
+                    <h3>Frontend Development</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">React</span>
+                        <span class="skill-tag">Next.js</span>
+                        <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">HTML5</span>
+                        <span class="skill-tag">CSS3</span>
+                        <span class="skill-tag">Tailwind CSS</span>
+                        <span class="skill-tag">Daisy UI</span>
+                        <span class="skill-tag">Lucide React</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <div class="skill-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect>
+                            <rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect>
+                            <line x1="6" y1="6" x2="6.01" y2="6"></line>
+                            <line x1="6" y1="18" x2="6.01" y2="18"></line>
+                        </svg>
+                    </div>
+                    <h3>Backend Development</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Node.js</span>
+                        <span class="skill-tag">Express</span>
+                        <span class="skill-tag">REST APIs</span>
+                        <span class="skill-tag">API Integration</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <div class="skill-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
+                            <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path>
+                            <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path>
+                        </svg>
+                    </div>
+                    <h3>Database</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">MongoDB</span>
+                        <span class="skill-tag">PostgreSQL</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <div class="skill-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <path d="M12 16v-4"></path>
+                            <path d="M12 8h.01"></path>
+                        </svg>
+                    </div>
+                    <h3>ML/AI</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Teachable Machine</span>
+                        <span class="skill-tag">Computer Vision</span>
+                        <span class="skill-tag">Machine Learning</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            <p class="section-subtitle">High-impact solutions addressing real-world challenges</p>
+            
+            <div class="projects-grid">
+                <!-- WiyoRent -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=800&h=500&fit=crop" alt="WiyoRent - Student Housing Platform" loading="lazy">
+                    </div>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h3>WiyoRent</h3>
+                            <span class="project-role">Co-Founder & Full Stack Developer</span>
+                        </div>
+                        <p class="project-description">Student housing platform helping 150+ students find affordable accommodation in Rwanda. Currently being remodeled with Next.js for enhanced performance and scalability.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Next.js</span>
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">CSS</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://wiyorent.com/" target="_blank" class="project-link">Live Demo →</a>
+                            <a href="https://github.com/WiyoRent/WiyoRent_Website" target="_blank" class="project-link">GitHub →</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- E-commerce Platform -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1557821552-17105176677c?w=800&h=500&fit=crop" alt="E-commerce Platform" loading="lazy">
+                    </div>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h3>E-commerce Platform</h3>
+                            <span class="project-role">Full Stack Developer</span>
+                        </div>
+                        <p class="project-description">Complete e-commerce solution with product management, shopping cart, and secure checkout. Built with modern tech stack for optimal performance.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Next.js</span>
+                            <span class="tech-tag">Tailwind CSS</span>
+                            <span class="tech-tag">Postgres</span>
+                            <span class="tech-tag">Lucide React</span>
+                            <span class="tech-tag">Daisy UI</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://e-commerce-nextjs-sage.vercel.app/" target="_blank" class="project-link">Live Demo →</a>
+                            <a href="https://github.com/WinstonNji/e-commerce_NEXTJS.git" target="_blank" class="project-link">GitHub →</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Doctor Booking App -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=800&h=500&fit=crop" alt="Doctor Booking App" loading="lazy">
+                    </div>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h3>Doctor Booking App</h3>
+                            <span class="project-role">MERN Stack Developer</span>
+                        </div>
+                        <p class="project-description">Healthcare appointment booking system connecting patients with doctors. Features real-time availability, appointment management, and user authentication.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">MongoDB</span>
+                            <span class="tech-tag">Express</span>
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">Node.js</span>
+                            <span class="tech-tag">Tailwind CSS</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://doctour-booking-app-frontend.onrender.com/" target="_blank" class="project-link">Live Demo →</a>
+                            <a href="https://github.com/WinstonNji/Doctour-Booking-App.git" target="_blank" class="project-link">GitHub →</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hackathon Trash Sorter -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1532996122724-e3c354a0b15b?w=800&h=500&fit=crop" alt="Trash Sorter AI" loading="lazy">
+                    </div>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h3>Hackathon Trash Sorter</h3>
+                            <span class="project-role">ML Developer</span>
+                        </div>
+                        <p class="project-description">AI-powered trash classification system using Teachable Machine for visual recognition. Helps automate waste sorting for recycling initiatives.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Teachable Machine</span>
+                            <span class="tech-tag">Machine Learning</span>
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">Computer Vision</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://nick-lemy.github.io/EcoX/" target="_blank" class="project-link">Live Demo →</a>
+                            <a href="https://github.com/Nick-Lemy/EcoX" target="_blank" class="project-link">GitHub →</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     
-            <div class="contact-form">
-                <form action="#">
-                    <input  id="name" type="text" placeholder="Your Name" required>
-                    <input id="email"  type="email" placeholder="Your Email" required>
-                    <textarea id="message" placeholder="Your Message" rows="4" required></textarea>
-                    <button type="button" class="email-btn" onclick="sendEmail()">Contact Me</button>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <p class="section-subtitle">Let's discuss how we can work together</p>
+            
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                            <polyline points="22,6 12,13 2,6"></polyline>
+                        </svg>
+                        <div>
+                            <h4>Email</h4>
+                            <a href="mailto:winston00russel@gmail.com">winston00russel@gmail.com</a>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                        </svg>
+                        <div>
+                            <h4>Phone</h4>
+                            <a href="tel:+250794104177">+250 794 104 177</a>
+                        </div>
+                    </div>
+
+                    <div class="contact-socials">
+                        <a href="https://github.com/WinstonNji" target="_blank" class="contact-social-link">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                            </svg>
+                            GitHub
+                        </a>
+                        <a href="https://www.linkedin.com/in/winston-nji-5363ab310/" target="_blank" class="contact-social-link">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                            </svg>
+                            LinkedIn
+                        </a>
+                    </div>
+                </div>
+
+                <form class="contact-form" action="#" method="POST">
+                    <div class="form-group">
+                        <input type="text" name="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" name="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
                 </form>
             </div>
-        </section>
-    </main>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Winston Nji. All rights reserved.</p>
+        </div>
+    </footer>
 </body>
-<script src="app.js"></script>
 </html>
