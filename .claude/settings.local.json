@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python3 \"C:/Users/winst/.claude/plugins/cache/ui-ux-pro-max-skill/ui-ux-pro-max/2.5.0/.claude/skills/ui-ux-pro-max/scripts/search.py\" \"personal portfolio developer minimal editorial\" --design-system -p \"Winston Nji Portfolio\")",
+      "Bash(python3 \"C:/Users/winst/.claude/plugins/cache/ui-ux-pro-max-skill/ui-ux-pro-max/2.5.0/src/ui-ux-pro-max/scripts/search.py\" \"personal portfolio developer minimal editorial\" --design-system -p \"Winston Nji Portfolio\")",
+      "Bash(python3 -m http.server 5500)",
+      "Bash(echo \"Server PID: $!\")",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://localhost:5500/index.html)"
+    ]
+  }
+}
