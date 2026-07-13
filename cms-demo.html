@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Content Moderation Demo — Winston Nji</title>
+
+    <link rel="stylesheet" href="css/base.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <style>
+        .demo-page {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .demo-topbar {
+            border-bottom: 1px solid var(--border);
+            background: var(--surface);
+        }
+        .demo-topbar .container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 64px;
+        }
+        .demo-logo {
+            font-family: var(--font-display);
+            font-weight: 700;
+            font-size: 1.125rem;
+            color: var(--ink);
+        }
+        .demo-logo span { color: var(--accent); }
+        .demo-back {
+            font-size: 0.9375rem;
+            font-weight: 500;
+            color: var(--ink-2);
+            transition: color 160ms var(--ease);
+        }
+        .demo-back:hover { color: var(--ink); }
+
+        .demo-main {
+            flex: 1;
+            padding: var(--sp-16) 0 var(--sp-20);
+        }
+        .demo-wrap {
+            max-width: 720px;
+            margin: 0 auto;
+            padding: 0 var(--sp-6);
+        }
+
+        .demo-header { text-align: center; margin-bottom: var(--sp-10); }
+        .demo-header .section-label { margin-bottom: var(--sp-3); }
+        .demo-header h1 {
+            font-family: var(--font-display);
+            font-size: clamp(1.9rem, 4vw, 2.5rem);
+            font-weight: 700;
+            letter-spacing: -0.02em;
+            line-height: 1.15;
+            color: var(--ink);
+            margin-bottom: var(--sp-4);
+        }
+        .demo-header p {
+            font-size: 1.0625rem;
+            line-height: 1.7;
+            color: var(--ink-2);
+            max-width: 520px;
+            margin: 0 auto;
+        }
+
+        .demo-card {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: var(--radius-xl);
+            box-shadow: var(--shadow-sm);
+            padding: var(--sp-6);
+        }
+
+        .demo-label {
+            display: block;
+            font-size: 0.8125rem;
+            font-weight: 600;
+            letter-spacing: 0.02em;
+            color: var(--ink-2);
+            margin-bottom: var(--sp-3);
+        }
+        .demo-textarea {
+            width: 100%;
+            min-height: 150px;
+            resize: vertical;
+            font-family: var(--font-body);
+            font-size: 1rem;
+            line-height: 1.6;
+            color: var(--ink);
+            background: var(--surface-2);
+            border: 1.5px solid var(--border-2);
+            border-radius: var(--radius-md);
+            padding: var(--sp-4);
+            transition: border-color 160ms var(--ease), background 160ms var(--ease);
+        }
+        .demo-textarea:focus {
+            outline: none;
+            border-color: var(--accent);
+            background: var(--surface);
+        }
+        .demo-textarea::placeholder { color: var(--ink-3); }
+
+        .demo-controls {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: var(--sp-4);
+            margin-top: var(--sp-4);
+            flex-wrap: wrap;
+        }
+        .demo-samples {
+            display: flex;
+            gap: var(--sp-2);
+            flex-wrap: wrap;
+        }
+        .demo-chip {
+            font-size: 0.8125rem;
+            font-weight: 500;
+            color: var(--ink-2);
+            background: var(--surface-3);
+            border: 1px solid var(--border);
+            border-radius: var(--radius-full);
+            padding: 0.35rem 0.75rem;
+            transition: background 160ms var(--ease), color 160ms var(--ease), border-color 160ms var(--ease);
+        }
+        .demo-chip:hover {
+            background: var(--accent-bg);
+            border-color: var(--accent);
+            color: var(--accent-hover);
+        }
+        .btn[disabled] {
+            opacity: 0.55;
+            cursor: not-allowed;
+        }
+        .btn .spinner {
+            width: 15px;
+            height: 15px;
+            border: 2px solid rgba(255,255,255,0.4);
+            border-top-color: #fff;
+            border-radius: 50%;
+            animation: demo-spin 0.7s linear infinite;
+        }
+        @keyframes demo-spin { to { transform: rotate(360deg); } }
+
+        /* ---- Result ---- */
+        .demo-result {
+            margin-top: var(--sp-6);
+            border-top: 1px solid var(--border);
+            padding-top: var(--sp-6);
+        }
+        .demo-result[hidden] { display: none; }
+
+        .verdict {
+            display: flex;
+            align-items: center;
+            gap: var(--sp-3);
+            margin-bottom: var(--sp-6);
+        }
+        .verdict-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: var(--sp-2);
+            font-family: var(--font-display);
+            font-weight: 600;
+            font-size: 1rem;
+            text-transform: capitalize;
+            padding: 0.4rem 0.9rem;
+            border-radius: var(--radius-full);
+            border: 1.5px solid;
+        }
+        .verdict-badge .dot {
+            width: 9px; height: 9px; border-radius: 50%;
+            background: currentColor;
+        }
+        .verdict-conf {
+            font-size: 0.9375rem;
+            color: var(--ink-2);
+        }
+        .verdict-conf strong { color: var(--ink); }
+
+        /* label colors */
+        .is-clean   { color: #1f7a4d; background: #eaf6ef; border-color: #b7e0c8; }
+        .is-flagged { color: #b0790a; background: var(--accent-bg); border-color: #f0d79a; }
+        .is-toxic   { color: #c0392b; background: #fdecea; border-color: #f2c2bb; }
+
+        .bar-row { margin-bottom: var(--sp-4); }
+        .bar-row:last-child { margin-bottom: 0; }
+        .bar-top {
+            display: flex;
+            justify-content: space-between;
+            font-size: 0.875rem;
+            margin-bottom: var(--sp-2);
+        }
+        .bar-name { font-weight: 600; text-transform: capitalize; color: var(--ink); }
+        .bar-val { color: var(--ink-2); font-variant-numeric: tabular-nums; }
+        .bar-track {
+            height: 8px;
+            background: var(--surface-3);
+            border-radius: var(--radius-full);
+            overflow: hidden;
+        }
+        .bar-fill {
+            height: 100%;
+            width: 0;
+            border-radius: var(--radius-full);
+            transition: width 600ms var(--ease-out);
+        }
+        .fill-clean   { background: #2e9e63; }
+        .fill-flagged { background: var(--accent); }
+        .fill-toxic   { background: #d9503f; }
+
+        .demo-error {
+            margin-top: var(--sp-4);
+            font-size: 0.9375rem;
+            color: #c0392b;
+            background: #fdecea;
+            border: 1px solid #f2c2bb;
+            border-radius: var(--radius-md);
+            padding: var(--sp-3) var(--sp-4);
+        }
+        .demo-error[hidden] { display: none; }
+
+        .demo-foot {
+            margin-top: var(--sp-6);
+            text-align: center;
+            font-size: 0.8125rem;
+            color: var(--ink-3);
+        }
+        .demo-foot a { color: var(--ink-2); text-decoration: underline; text-underline-offset: 2px; }
+        .demo-foot a:hover { color: var(--ink); }
+    </style>
+</head>
+<body>
+    <div class="demo-page">
+        <header class="demo-topbar">
+            <div class="container">
+                <a href="index.html#home" class="demo-logo">Winston<span>.</span></a>
+                <a href="index.html#projects" class="demo-back">← Back to projects</a>
+            </div>
+        </header>
+
+        <main class="demo-main">
+            <div class="demo-wrap">
+                <div class="demo-header">
+                    <span class="section-label">Live ML Demo</span>
+                    <h1>Content Moderation System</h1>
+                    <p>Type or paste any comment and the model classifies it as <strong>clean</strong>, <strong>flagged</strong>, or <strong>toxic</strong> in real time — a GloVe-embedded stacked LSTM served with FastAPI.</p>
+                </div>
+
+                <div class="demo-card">
+                    <label class="demo-label" for="demo-text">Text to analyze</label>
+                    <textarea id="demo-text" class="demo-textarea" placeholder="e.g. Thanks so much, this was really helpful!"></textarea>
+
+                    <div class="demo-controls">
+                        <div class="demo-samples" id="demo-samples">
+                            <button type="button" class="demo-chip" data-sample="Thank you so much, this was genuinely helpful and kind.">Try: friendly</button>
+                            <button type="button" class="demo-chip" data-sample="Absolute garbage place, the owner is a lying piece of trash.">Try: rude</button>
+                            <button type="button" class="demo-chip" data-sample="I will find you and make you regret ever being born.">Try: threatening</button>
+                        </div>
+                        <button type="button" class="btn btn-primary" id="demo-analyze">Analyze</button>
+                    </div>
+
+                    <div class="demo-error" id="demo-error" hidden></div>
+
+                    <div class="demo-result" id="demo-result" hidden>
+                        <div class="verdict">
+                            <span class="verdict-badge" id="verdict-badge"><span class="dot"></span><span id="verdict-label">—</span></span>
+                            <span class="verdict-conf"><strong id="verdict-conf">—</strong> confidence</span>
+                        </div>
+
+                        <div class="bar-row">
+                            <div class="bar-top"><span class="bar-name">Clean</span><span class="bar-val" id="val-clean">0%</span></div>
+                            <div class="bar-track"><div class="bar-fill fill-clean" id="fill-clean"></div></div>
+                        </div>
+                        <div class="bar-row">
+                            <div class="bar-top"><span class="bar-name">Flagged</span><span class="bar-val" id="val-flagged">0%</span></div>
+                            <div class="bar-track"><div class="bar-fill fill-flagged" id="fill-flagged"></div></div>
+                        </div>
+                        <div class="bar-row">
+                            <div class="bar-top"><span class="bar-name">Toxic</span><span class="bar-val" id="val-toxic">0%</span></div>
+                            <div class="bar-track"><div class="bar-fill fill-toxic" id="fill-toxic"></div></div>
+                        </div>
+                    </div>
+                </div>
+
+                <p class="demo-foot">
+                    Powered by my <a href="https://github.com/WinstonNji/Content-Management-System" target="_blank" rel="noopener">Content Moderation API</a>.
+                    First request may take a few seconds while the model warms up.
+                </p>
+            </div>
+        </main>
+    </div>
+
+    <script>
+        const API_URL = 'https://cms-production-8d9e.up.railway.app/moderate';
+
+        const els = {
+            text:    document.getElementById('demo-text'),
+            analyze: document.getElementById('demo-analyze'),
+            result:  document.getElementById('demo-result'),
+            error:   document.getElementById('demo-error'),
+            badge:   document.getElementById('verdict-badge'),
+            vLabel:  document.getElementById('verdict-label'),
+            vConf:   document.getElementById('verdict-conf'),
+        };
+
+        const pct = (n) => `${(n * 100).toFixed(1)}%`;
+
+        document.getElementById('demo-samples').addEventListener('click', (e) => {
+            const chip = e.target.closest('.demo-chip');
+            if (!chip) return;
+            els.text.value = chip.dataset.sample;
+            els.text.focus();
+        });
+
+        els.text.addEventListener('keydown', (e) => {
+            if ((e.metaKey || e.ctrlKey) && e.key === 'Enter') analyze();
+        });
+
+        els.analyze.addEventListener('click', analyze);
+
+        function setLoading(on) {
+            els.analyze.disabled = on;
+            els.analyze.innerHTML = on
+                ? '<span class="spinner"></span> Analyzing…'
+                : 'Analyze';
+        }
+
+        function showError(msg) {
+            els.error.textContent = msg;
+            els.error.hidden = false;
+            els.result.hidden = true;
+        }
+
+        function render(data) {
+            els.error.hidden = true;
+            const s = data.scores;
+
+            els.badge.className = 'verdict-badge is-' + data.label;
+            els.vLabel.textContent = data.label;
+            els.vConf.textContent = pct(data.confidence);
+
+            const names = ['clean', 'flagged', 'toxic'];
+            // Numbers show immediately; widths reset to 0 so the fill can animate.
+            names.forEach((name) => {
+                document.getElementById('val-' + name).textContent = pct(s[name]);
+                document.getElementById('fill-' + name).style.width = '0%';
+            });
+            els.result.hidden = false;
+            // Animate the bars on the next frame (falls back to a timeout if rAF is paused).
+            const grow = () => names.forEach((name) => {
+                document.getElementById('fill-' + name).style.width = pct(s[name]);
+            });
+            requestAnimationFrame(grow);
+            setTimeout(grow, 60);
+        }
+
+        async function analyze() {
+            const text = els.text.value.trim();
+            if (!text) {
+                showError('Please enter some text to analyze.');
+                return;
+            }
+            setLoading(true);
+            try {
+                const res = await fetch(API_URL, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ text }),
+                });
+                if (!res.ok) {
+                    throw new Error(res.status === 422
+                        ? 'The text could not be processed. Try different input.'
+                        : `Server responded with ${res.status}.`);
+                }
+                render(await res.json());
+            } catch (err) {
+                showError(
+                    err.name === 'TypeError'
+                        ? 'Could not reach the moderation API. It may be waking up — please try again in a moment.'
+                        : err.message
+                );
+            } finally {
+                setLoading(false);
+            }
+        }
+    </script>
+</body>
+</html>
